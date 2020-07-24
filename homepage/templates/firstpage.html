@@ -1,0 +1,20 @@
+<ul>
+    {% for item in res %}
+        <li>
+            Title:{{item.title}}
+            Published At:{{item.published_at}}
+            Date published:{{item.duration}}
+            Description:{{item.description}}
+            Channel:{{item.channel}}
+            Views:{{item.view_count}}
+            Likes:{{item.like_count}}
+            Dislikes:{{item.dislike_count}}
+
+            Comment Count:{{item.comment_count}}
+            Type:{{item.type}}
+        </li>
+        <iframe width="420" height="200" src="https://www.youtube.com/embed/{{item.video_id}}" allowfullscreen></iframe>
+
+    {% endfor %}
+
+</ul>
